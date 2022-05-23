@@ -1,0 +1,180 @@
+header
+    .main_container
+        padding-top: 15px
+        z-index: 5
+        .header_top
+            +flex_between
+            .top_left
+                display: flex
+                gap: 11px
+                .logo1
+                    position: relative
+                    height: 60px
+                    width: 132px
+                    span
+                        width: 100% !important
+                .logo2
+                    position: relative
+                    height: 61px
+                    width: 49px
+                    span
+                        width: 100% !important
+            .top_right_mobile
+                display: none
+                .mobile_hamburger
+                    .hamburger_btn
+                        background: none
+            
+            .top_right
+                display: flex
+                align-items: center
+                z-index: 2
+                .navbar_group
+                    position: relative
+                    display: flex
+                    align-items: center
+                .nav_ul
+                    display: flex
+                    gap: 30px
+                    padding-right: 71px
+                    li
+                        cursor: pointer
+                        a, span
+                            transition: all .5s ease
+                            font-weight: 600
+                            font-size: 14px
+                            line-height: 16px
+                            color: $blue1
+                            border-bottom: 1px solid transparent
+                        &:hover
+                            a, span
+                                border-bottom: 1px solid $blue2
+                                color: $blue2
+
+                
+
+                .header_profile
+                    margin-left: 25px
+                    display: flex
+                    
+                    svg
+                        path
+                            transition: .5s
+                    &:hover
+                        svg
+                            path
+                                fill: $blue2
+
+
+                .header_lang
+                    margin-left: 25px
+                    position: relative
+                    z-index: 4
+                    cursor: pointer
+                    .drop_top
+                        display: flex
+                        gap: 2px
+                        span
+                            color: $blue1
+                            font-size: 14px
+                            line-height: 16px
+                            font-weight: 700
+                            text-transform: uppercase
+                        ._img
+                            transition: .3s
+                            position: relative
+                            width: 6px
+                    &.open
+                        .drop_top
+                            ._img
+                                transform: rotate(90deg)
+                        .dropdown_wrapper
+                            height: max-content
+                            span
+                                opacity: 1
+                    .dropdown_wrapper
+                        position: absolute
+                        top: 100%
+                        left: -7px
+                        background-color: $white
+                        border-radius: 5px
+                        padding: 0px 7px 0
+                        height: 0
+                        transition: .3s
+                        
+                        span
+                            opacity: 0
+                            transition: .3s
+                            color: $blue1
+                            font-size: 14px
+                            line-height: 16px
+                            font-weight: 700
+                            padding: 3px 0
+                            display: block
+                            border-top: 1px solid $blue1
+                            &:first-child
+                                margin-top: 3px
+
+        .header_bottom
+            margin-top: 15px
+            background-color: $blue4
+            border-radius: 20px
+            box-shadow: 0px 4px 16px 0px #62ACAC66
+            padding: 6px 6px 6px 37px
+            +flex_between
+            .navbar_menu_swiper
+                margin: 15px 0
+                padding-right: 70px
+                position: relative
+                z-index: 1
+                &::after
+                    z-index: 1
+                    position: absolute
+                    top: 0
+                    right: 0
+                    content: ''
+                    height: 100%
+                    width: 60px
+                    background: linear-gradient(270deg, #92D7D7 24.26%, rgba(146, 215, 215, 0) 78.95%)
+                .swiper-slide
+                    width: max-content
+                    border-right: 1px solid $blue1
+                    &:first-child
+                        span
+                            padding-left: 0
+                    &:last-child
+                        border-right: none
+                    a
+                        height: 100%
+                        +flex_center
+                        &:hover
+                            span
+                                color: $white
+                    span
+                        transition: .5s
+                        padding: 10px 30px
+                        color: $blue1
+                        font-size: 18px
+                        line-height: 16px
+                        font-weight: 700
+
+            button
+                z-index: 2
+                position: relative
+                background-color: $blue1
+                transition: box-shadow 0.3s ease-in-out
+                box-shadow: 0px 4px 16px 0px #1F379259
+                border-radius: 20px
+                padding: 10px 15px
+                min-height: 65px
+                +flex_center
+                min-width: 142px
+                color: $white
+                font-weight: 700
+                font-size: 18px
+                line-height: 16px
+                
+                &:hover
+                    box-shadow: none
+
+                

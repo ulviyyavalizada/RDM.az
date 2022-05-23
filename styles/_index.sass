@@ -1,0 +1,485 @@
+.index
+    
+    .title_box
+        padding-top: 86px
+        padding-bottom: 15px
+    .index_landing
+        background-color: #4596DF0D
+        *
+            z-index: 1
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            background-color: $white
+            background-image: url(../public/img/mainBack.png)
+            width: 100%
+            height: 850px
+            z-index: 0
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+        
+        .main_container
+            display: flex
+            padding-top: 11px
+            padding-bottom: 23px
+            .left_box
+                width: 66%
+                display: flex
+                padding-top: 113px
+                flex-direction: column
+                justify-content: space-between
+                padding-bottom: 20px
+                ._top
+                    .main_title
+                        color: $blue2
+                        font-size: 55px
+                        line-height: 55px
+                        font-weight: 700
+                        max-width: 563px
+                    ._text
+                        max-width: 388px
+                        padding-top: 11px
+                        color: $blue1
+                        font-size: 18px
+                        line-height: 24px
+                        text-overflow: ellipsis
+                        overflow: hidden
+                        display: -webkit-box
+                        -webkit-box-orient: vertical
+                        -webkit-line-clamp: 3
+                    button
+                        border-radius: 15px
+                        margin-top: 23px
+                        border: 1px solid $blue2
+                        height: 50px
+                        min-width: 183px
+                        padding: 15px 21px 
+                        color: $blue2
+                        font-size: 18px
+                        line-height: 18px
+                        font-weight: 600
+                        +flex_center
+
+                ._bottom
+                    display: flex
+                    gap: 35px
+                    padding-top: 174px
+                    .item
+                        box-shadow: 0px 13px 16px 0px #1744F21A
+                        background-color: $white
+                        transition: .7s ease
+                        cursor: pointer
+                        +flex_between
+                        flex-direction: column
+                        width: 100px
+                        height: 91px
+                        border-radius: 17px
+                        padding: 15px
+                        border: 1px solid transparent
+                        &:hover
+                            border-color: $blue1
+                        &:first-child
+                            &.active
+                                svg
+                                    margin-top: -25px
+                        &.active
+                            background-color: $blue2
+                            box-shadow: 0px 13px 16px 0px #1744F24D
+                            svg
+                                margin-top: -12px
+                                transform: scale(1.4)
+                                path
+                                    fill: $blue4
+                            span
+                                transform: scale(1.4)
+                                color: $white
+                        svg
+                            transition: .5s ease
+                            path
+                                transition: fill .5s ease
+                        span
+                            font-size: 10px
+                            line-height: 10px
+                            font-weight: 700
+                            transition: .5s ease
+                            text-align: center
+                            padding-top: 8px
+
+            .right_box
+                max-width: 648px
+                border-radius: 50%
+                background-color: $blue5
+                padding: 26px
+                height: max-content
+                width: 100%
+                .swiper_items
+                    width: 100%
+                    height: 100%
+                    padding: 3.5px
+                    background-color: #ECF0FE
+                    position: relative
+                    z-index: 2
+                    border-radius: inherit
+                    &::before
+                        content: ''
+                        position: absolute
+                        top: 0
+                        width: 100%
+                        height: 100%
+                        left: 0
+                        right: 0
+                        bottom: 0
+                        z-index: 1
+                        border-radius: inherit
+                        background: linear-gradient(115deg, rgb(151, 238, 238) 47%, #ECF0FE 84%)
+
+                .swiper
+                    position: static
+                    .swiper-slide
+                        height: unset
+                    .swiper-pagination 
+                        left: unset
+                        z-index: 10 !important
+                        bottom: unset
+                        .swiper-pagination-bullet 
+                            position: absolute
+                            top: 0
+                            padding: 2px
+                            border-radius: 50%
+                            left: 0
+                            width: 14px
+                            height: 14px
+                            +flex_center
+                            svg
+                                transform: scale(0)
+                                transition: .3s
+                                width: 100%
+                                height: 100%
+                            &:nth-child(1)
+                                left: 188px
+                                top: 6px
+                                
+                            &:nth-child(2)
+                                left: 44px
+                                top: 111px
+                            &:nth-child(3)
+                                left: -12px
+                                top: 257px
+                            &:nth-child(4)
+                                left: 12px
+                                top: 407px
+                                
+                            &.swiper-pagination-bullet-active
+                                background-color: $blue1
+                                transform: scale(2.4)
+                                svg
+                                    transform: scale(1)
+                                    
+                    
+                .inner_img
+                    border-radius: 50%
+                    position: relative
+                    height: 100%
+                    padding: 1px
+                    background-clip: padding-box
+                    border: 24px solid #ECF0FE
+                    background-color: #ECF0FE
+                    ._img
+                        position: relative
+                        height: 0
+                        padding-top: 100%
+                    img
+                        object-fit: cover
+                        border-radius: 50%
+                        padding: 16px !important
+                        background-color: #ECF0FE
+                    &::before
+                        content: ''
+                        position: absolute
+                        top: 0
+                        width: 100%
+                        height: 100%
+                        left: 0
+                        right: 0
+                        bottom: 0
+                        z-index: 1
+                        border-radius: inherit
+                        background: linear-gradient(-18deg, rgb(23, 68, 242) 34%, #ECF0FE 84%)
+                        
+                    span
+                        border: 2px solid !important
+                        border-radius: 50%
+                        padding: 14px !important
+                        border-image-source: linear-gradient(208.11deg, rgba(23, 68, 242, 0) 15.95%, #1744F2 67.67%)
+
+
+                    //     z-index: 2
+                    //     border: 5px solid transparent !important
+                    //     border-radius: 50%
+                    //     background: linear-gradient(-18deg, rgb(23, 68, 242) 34%, #ECF0FE 84%) !important
+
+    .index_service
+        position: relative
+        padding-bottom: 31px
+        background-color: $blue4
+        &::after
+            position: absolute
+            content: ''
+            bottom: 0
+            right: 0
+            background-image: url(../public/img/indexServiceBg.png)
+            background-repeat: no-repeat
+            background-size: cover
+            max-width: 666px
+            width: 100%
+            height: 513px
+        .title_box
+            a
+                color: $blue1
+                &:hover
+                    color: $blue2
+        
+        .services_row
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            gap: 20px
+            .service_6, .service_8, .service_9
+                opacity: 0
+            .service_item
+                border: 1px solid $white
+
+    .index_doctor
+        background-color: $white
+        .main_container
+            margin: 186px 0
+            padding: 31px 20px
+            background: linear-gradient(-89.79deg, #DEF4F4 58.82%, #1F3792 99.82%)
+            border-radius: 0 80px 0 80px
+            +flex_center
+            gap: 41px
+            .doctor_img
+                margin-top: -196px
+                max-width: 519.75px
+                max-height: 519.75px
+                width: 100%
+                height: 100%
+            ._img
+                position: relative  
+                width: 100%
+                height: 0
+                padding-top: 100%
+                transition: .3s 
+                border: 1px solid transparent
+                img
+                    border: 3px solid rgba(223, 243, 243, 1) !important
+                    border-radius: 50%
+                    padding: 34px !important
+                    object-fit: cover
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 0
+                    left: 0
+                    background-image: url('../public/img/doctorImgBack.png')
+                    background-size: cover
+                    background-repeat: no-repeat
+                    width: 100%
+                    height: 100%
+                    border-radius: 50% 
+
+            .info
+                max-width: 407px
+                ._title
+                    font-size: 55px
+                    line-height: 55px
+                    font-weight: 700
+                ._text
+                    margin-top: 19px
+                    font-size: 18px
+                    line-height: 28px
+                    margin-bottom: 20px
+                    text-overflow: ellipsis
+                    overflow: hidden
+                    display: -webkit-box
+                    -webkit-box-orient: vertical
+                    -webkit-line-clamp: 3
+                span
+                    font-size: 18px
+                    line-height: 27px
+                    font-weight: 600
+                    border-bottom: 1px solid 
+
+    .index_review
+        background-color: $blue4
+        position: relative
+        z-index: 1
+        &::before
+            content: ''
+            z-index: -1
+            position: absolute
+            top: 0
+            width: 283px
+            height: 180px
+            left: 0
+            background-image: url('../public/img/reviewTop.png')
+            background-repeat: no-repeat
+            background-size: contain
+        &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            z-index: -1
+            height: 192px
+            width: 283px
+            left: 0
+            background-image: url('../public/img/reviewBottom.png')
+            background-repeat: no-repeat
+            background-size: contain
+        .review_swiper
+            width: 100%
+            padding: 114px 0
+            +flex_between
+            gap: 120px
+            .left_box
+                width: 100%
+                max-width: 297px
+                .container
+                    padding: 10px
+                ._title
+                    font-size: 55px
+                    line-height: 55px
+                    font-weight: 700
+                ._text
+                    padding-top: 9px
+                    font-size: 18px
+                    line-height: 22px
+                    font-weight: 500
+                    
+            .right_box
+                width: 60%
+                height: 100%
+                .container
+                    padding: 10px
+                .swiper
+                    height: 100%
+                    padding-bottom: 45px
+                    &.swiper-3d 
+                            .swiper-slide-shadow-right
+                                background-image: linear-gradient(to right,rgb(146, 212, 215),rgba(146, 212, 215,0))
+                            .swiper-slide-shadow-left
+                                background-image: linear-gradient(to left,#92D4D7,rgba(146, 212, 215,0))
+                    .swiper-slide
+                        height: 100%
+                        max-width: 335px
+                        width: 100%
+                        background-color: $white
+                        border-radius: 10px
+                        box-shadow: 2px 2px 6px 0px #58A4A473
+                        // &.swiper-slide-active
+                        //     transform-style: unset
+                        //     transform: scale(1.2) !important
+                        
+                        .review_item
+                            padding: 23px 40px 14px
+                            ._img
+                                width: 21px
+                                margin: 0 auto
+                            ._title
+                                padding-top: 17.5px
+                                font-size: 18px
+                                line-height: 18px
+                                text-align: center
+                                font-weight: 700
+                                padding-bottom: 19px
+                                border-bottom: 1px solid $blue4
+                            ._text
+                                padding-top: 13px
+                                font-size: 16px
+                                line-height: 24px
+                                text-align: center
+                                text-overflow: ellipsis
+                                overflow: hidden
+                                display: -webkit-box
+                                -webkit-box-orient: vertical
+                                -webkit-line-clamp: 6
+
+                    .swiper-pagination-bullet
+                        background-color: $white
+                        &.swiper-pagination-bullet-active
+                            background-color: $blue1
+                           
+    .index_blog
+        padding-bottom: 66px
+        .index_boxes
+            gap: 10px 20px
+            display: grid
+            grid-template-columns: 1fr 1fr
+            .blog_item
+                padding: 19px
+                gap: 15px
+                ._img
+                    min-height: 106px
+                .item_info 
+                    .info_left 
+                        .bottom_box
+                            padding-top: 16px
+                        .top_box 
+                            ._name
+                                padding-top: 0
+                                -webkit-line-clamp: 3
+                            ._text
+                                display: none
+
+    .index_partner
+        background-color: rgba(69, 150, 223, 0.1)
+        padding-bottom: 40px
+        padding-top: 20px
+        
+        .partner_swiper
+            padding-top: 5px
+            .swiper
+                min-height: 70px
+                height: max-content
+                padding-bottom: 49px
+                .swiper-slide
+                    height: initial
+                    border: 1px solid $blue1
+                    border-radius: 15px
+                    +flex_center
+                    padding: 10px 21px
+                    span
+                        height: 100% !important
+                        width: 100% !important
+                    img
+                        object-fit: contain
+                .swiper-pagination-bullet
+                    background-color: $blue4
+                    &.swiper-pagination-bullet-active
+                        background-color: $blue1
+
+    .index_contact
+        position: relative
+        background-color: $blue4
+        .contacts_box
+            position: absolute
+            padding-left: calc(((100vw - 1200px) / 2) )
+            padding-right: calc(((100vw - 1200px) / 2) )
+            display: flex
+            width: 100%
+            bottom: 0
+            height: max-content
+            justify-content: space-between
+            gap: 31px
+            .contact_item
+                width: 100%
+        .contact_map
+            width: 100%
+            margin-bottom: -1px
+            padding-bottom: 100px
+            iframe
+                width: 100%
+                height: 417px
+

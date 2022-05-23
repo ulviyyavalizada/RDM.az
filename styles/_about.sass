@@ -1,0 +1,316 @@
+.about_inner
+    background-color: #4596DF0D
+    // z-index: 1
+    *
+        z-index: 1
+    &::before
+        position: absolute
+        top: 0
+        left: 0
+        content: ''
+        width: 100%
+        height: 100%
+        z-index: 0
+        pointer-events: none
+        background-color: $white
+        background-image: url(/img/mainBack.png)
+        background-repeat: no-repeat
+        background-size: cover
+    .about_top
+        display: flex
+        gap: 82px
+        justify-content: space-between
+        padding-bottom: 68px
+        >.left_box
+            width: 66%
+            .title_box
+                padding-bottom: 34px
+            .inner_boxes
+                .inner_text
+                    padding-top: 0
+                    padding-bottom: 0
+                    &:first-child
+                        ._title
+                            padding-top: 0
+                    ._title
+                        padding-top: 78px
+                        position: relative
+                        &::before
+                            content: ''
+                            position: absolute
+                            bottom: -17px
+                            left: 0
+                            width: 36.5px
+                            background-color: $blue4
+                            height: 1px
+                    ._text
+                        padding-top: 26px
+        >.right_box
+            width: 35%
+            height: max-content
+            max-width: 384px
+            position: relative
+            a
+                display: block
+            &::before
+                content: ''
+                position: absolute
+                height: 100%
+                width: 2px
+                left: 50%
+                transform: translateX(-50%)
+                background-color: $blue1
+            .inner_img
+                margin: 0 auto
+                transition: all .5s ease
+                height: max-content
+                
+                ._img
+                    border-radius: 50%
+                    position: relative
+                    max-width: 394px
+                    background-color: #ECF0FE
+                    padding: 2px
+                    background-clip: padding-box
+                    border: 12px solid #ECF0FE
+                    > span
+                        z-index: 2
+                        border: 10px solid #ECF0FE !important
+                        border-radius: inherit
+                        background-color: #ECF0FE !important
+                    img
+                        z-index: 2
+                        border-radius: 50%
+                        object-fit: cover
+                    &::before
+                        content: ''
+                        position: absolute
+                        top: 0
+                        width: 100%
+                        height: 100%
+                        left: 0
+                        right: 0
+                        bottom: 0
+                        z-index: 1
+                        border-radius: inherit
+                        background: linear-gradient(-28deg, rgb(23, 68, 242) 37%, #ECF0FE 84%)
+                &.active
+                    width: 100% !important
+                    padding-bottom: 33% !important
+                    // transform: scale(1)
+                    ._img
+                        // max-width: 394px
+                &:nth-child(1)
+                    width: 60%
+                    padding-bottom: 33%
+                    &:last-child
+                        padding-bottom: 0 !important
+                        margin-bottom: -1px
+                &:nth-child(2)
+                    width: 50%
+                    padding-bottom: 25%
+                    &:last-child
+                        padding-bottom: 0 !important
+                        margin-bottom: -1px
+                    // transform: scale(0.45)
+                    ._img
+                        
+                        // max-width: 187px
+                &:nth-child(3)
+                    width: 40%
+                    padding-bottom: 17%
+                    &:last-child
+                        padding-bottom: 0 !important
+                        margin-bottom: -1px
+                    // transform: scale(0.32)
+                    ._img
+                        
+                        // max-width: 115px
+                &:nth-child(4)
+                    width: 30%
+                    padding-bottom: 12%
+                    &:last-child
+                        padding-bottom: 0 !important
+                        margin-bottom: -1px
+                    // transform: scale(0.23)
+                    ._img
+                        
+                        // max-width: 82px
+                &:nth-child(5)
+                    width: 20%
+                    padding-bottom: 0%
+                    &:last-child
+                        padding-bottom: 0 !important
+                        margin-bottom: -1px
+                    // transform: scale(0.15)
+                    ._img
+                        
+                        // max-width: 58px
+                &:last-child
+                    ._border
+                        display: none
+                ._border
+                    margin: 0 auto
+                    width: 2px 
+                    background-color: $blue2
+                    min-height: 100px
+                
+    .about_middle
+        background-color: $blue7
+        padding: 52px 0 44px
+        .main_container
+            display: flex
+            gap: 60px
+            position: relative
+            .mobile_about_swip
+                display: none
+                button
+                    width: 100%
+                    color: $white
+                    +flex_center
+                    padding: 15px 17px
+                    font-size: 16px
+                    line-height: 16px
+                    height: 50px
+                    border-radius: 15px
+                    transition: .5s
+                    &.active
+                        background: #80D4D4
+                        color: $blue1
+                        mix-blend-mode: multiply
+                        box-shadow: 0px 7px 9px 0px #6cc5c5bf
+                        font-weight: 700
+
+            .about_swiper
+                max-width: 144px
+                width: 100%
+                * 
+                    pointer-events: none
+                &.active
+                    * 
+                        pointer-events: unset
+                    ._text
+                        ._title
+                            color: $blue1
+                        ._count
+                            color: $blue1
+                    .swiper
+                        .review-swiper-button-next, .review-swiper-button-prev
+                            display: block
+                            // display: block
+                            // &::after
+                            //     pointer-events: unset
+                            //     opacity: 1
+                ._text
+                    display: flex
+                    justify-content: space-between
+                    gap: 20px
+                    padding-bottom: 10px
+                    ._title
+                        font-weight: bold
+                        transition: .5s
+                        color: #F6FAFD
+                        font-size: 20px
+                        line-height: 20px
+                    ._count
+                        font-weight: 600
+                        transition: .5s
+                        color: #F6FAFD
+                        font-size: 20px
+                        line-height: 20px
+
+                .swiper
+                    height: 100%
+                    max-height: 574px
+                    position: static
+                    .review-swiper-button-next, .review-swiper-button-prev
+                        top: unset
+                        cursor: pointer
+                        position: absolute
+                        z-index: 2
+                        // display: none
+                        bottom: 0
+                        width: 38px
+                        display: none
+                        &.swiper-button-disabled
+                            opacity: 0.4
+                        span
+                            width: 100% !important
+                        img
+                            pointer-events: none
+                        &::after
+                            opacity: 0
+                    .review-swiper-button-prev
+                        left: 204px
+                    .review-swiper-button-next
+                        right: 204px
+                        img
+                            transform: rotate(-180deg)
+                .swiper-wrapper
+                    position: static
+                    height: 98px
+                    .swiper-slide
+                        height: 100% !important
+                        
+                        .inner_contain
+                            height: 100%
+                            video
+                                width: 100%
+                                height: 100%
+                                background-image: none !important
+                                filter: brightness(100%)
+                                object-fit: cover
+                                border-radius: 10px
+                            span
+                                pointer-events: none
+                                width: 100% !important
+                                height: 100% !important
+                                img
+                                    border-radius: 10px
+            
+            .main_swiper_content
+                width: 100%
+                z-index: 1
+                height: max-content
+                video
+                    max-width: 793px
+                    height: 536px
+                    display: none
+                    object-fit: cover
+                    border-radius: 10px
+                    width: 100%
+                    &.show
+                        display: block
+                ._img
+                    display: none
+                    height: 536px
+                    max-width: 793px
+                    &.show
+                        display: block
+                    span
+                        height: 100% !important
+                        width: 100% !important
+                img
+                    border-radius: 10px
+                    margin: 0 auto
+                    object-fit: cover
+                p
+                    padding-top: 19px
+                    margin-left: 120px
+                    margin-right: 120px
+                    max-width: 528px
+                    font-size: 16px
+                    line-height: 24px
+                    text-align: center
+                    text-overflow: ellipsis
+                    overflow: hidden
+                    display: -webkit-box
+                    -webkit-box-orient: vertical
+                    -webkit-line-clamp: 2
+
+    .index_partner
+        padding-top: 65px
+
+
+
+

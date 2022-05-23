@@ -1,0 +1,121 @@
+footer
+    background-color: $blue4
+    .main_container
+        padding: 35px 0 11px
+        .footer_top
+            display: flex
+            justify-content: space-between
+            gap: 50px
+            .top_left
+                ._logo
+                    position: relative
+                    height: 0
+                    width: 149px
+                    padding-top: 76.56px
+                ._text
+                    margin-top: 15.5px
+                    color: $blue1
+                    font-size: 10px
+                    line-height: 16px
+                    max-width: 286px
+                ._socials
+                    display: flex
+                    align-items: center
+                    gap: 13px
+                    padding-top: 46px
+                    a
+                        display: flex
+                    svg
+                        transform: scale(0.8)
+            .top_right
+                padding-top: 41px
+                
+                ul
+                    width: 712px
+                    display: grid
+                    grid-template-columns: repeat(4, 1fr)
+                    gap: 25px 37px
+                    li
+                        line-height: 14px
+                        line-height: 14px
+                        a
+                            width: 100%
+                        span
+                            color: $blue1
+                            font-size: 14px
+                            line-height: 14px
+                            font-weight: 700
+                            transition: .5s
+                        &:hover
+                            span
+                                color: $blue3
+
+        .footer_middle
+            position: relative
+            height: 1px
+            background-color: $white
+            width: 100%
+            margin-top: 24px
+            .scroll_box
+                position: absolute
+                left: 50%
+                transform: translate(-50%, 0%)
+                top: -18px
+                background-color: $blue4
+                padding: 0 12px
+                .scroll_top
+                    +flex_center
+                    background-color: $white
+                    width: 36px
+                    height: 36px
+                    border-radius: 50%
+                    transition: .5s
+                    &:hover
+                        background-color: $blue3
+                        box-shadow: 0px 4px 4px 0px #1F37924D
+                    svg
+                        margin-right: -1px
+
+        .footer_bottom
+            +flex_between
+            padding-top: 11px
+            gap: 20px
+            ._copyright
+                display: flex
+                gap: 4px
+                align-items: center
+                p
+                    font-size: 12px
+                    line-height: 12px
+                    color: $blue1
+                    span
+                        font-weight: 500
+            
+            ._logo
+                display: flex
+                gap: 8px
+                ._text1
+                    align-self: center
+                    padding-top: 5px
+                ._text2
+                    align-self: flex-end
+                    margin-left: -8px
+                ._text1, ._text2
+                    font-size: 12px
+                    line-height: 12px
+                    font-weight: 500
+                    color: $white
+                ._img
+                    position: relative
+                    height: 0
+                    padding-top: 34px
+                    width: 50px
+
+
+
+
+
+
+
+
+

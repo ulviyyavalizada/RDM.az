@@ -1,0 +1,1304 @@
+@media (min-width: 1250px)
+    .container
+        max-width: 1200px
+
+@media (max-width: 1200px)
+    body
+        footer 
+            .main_container 
+                .footer_top 
+                    .top_right 
+                        ul 
+                            grid-template-columns: repeat(3, 1fr)
+                            gap: 20px 30px
+                            max-width: 577px
+                            width: 100%
+
+    main
+        &.index 
+            .index_contact 
+                .contacts_box
+                    padding-left: calc((100vw - 960px) / 2)
+                    padding-right: calc((100vw - 960px) / 2)
+            .index_landing 
+                .main_container 
+                    padding-top: 33px
+                    flex-direction: column-reverse
+                    .right_box
+                        max-width: 486px
+                        .swiper 
+                            .swiper-pagination 
+                                .swiper-pagination-bullet
+                                    &:nth-child(1)
+                                        top: -6px
+                                        left: 166px
+                                    &:nth-child(2)
+                                        left: 20px
+                                        top: 92px
+                                    &:nth-child(3)
+                                        left: -7px
+                                    &:nth-child(4)
+                                        left: 82px
+                                        top: 385px
+
+                    .left_box
+                        flex-direction: column-reverse
+                        padding-top: 0
+                        ._bottom
+                            padding-top: 60px
+                        ._top
+                            padding-top: 80px
+
+    section
+        &.service_inner 
+            .main_container 
+                .service_container 
+                    .left_box 
+                        .related_doctors 
+                            .doctors_box
+                                gap: 35px
+
+        &.doctors 
+            .main_container 
+                .doctors_box
+                    gap: 50px
+
+        &.about_inner 
+            .about_top 
+                > .right_box
+                    display: none
+                > .left_box
+                    width: 100%
+
+
+
+@media (max-width: 991px)
+    body
+        header 
+            .main_container 
+                padding-top: 20px
+                .header_top
+                    .top_right_mobile
+                        display: block 
+                    .top_right 
+                        display: none
+                    .top_left 
+                        gap: 13px
+                        .logo1
+                            width: 116px
+                            height: 52px
+                        .logo2
+                            width: 43.5px
+                            height: 53.5px
+                            
+                .header_bottom
+                    display: none
+
+        footer 
+            .main_container 
+                .footer_top 
+                    .top_left 
+                        ._text
+                            max-width: 221px
+
+    main
+        &.index 
+            
+            .index_service 
+                &::after
+                    content: none
+            
+            .index_review 
+                .review_swiper
+                    display: block
+                    .right_box
+                        width: 100%
+                        padding-top: 41px
+
+            .index_blog 
+                .index_boxes
+                    grid-template-columns: 1fr
+    
+            .index_contact 
+                .contacts_box
+                    padding-left: calc((100vw - 720px) / 2)
+                    padding-right: calc((100vw - 720px) / 2)
+                    .contact_item
+                        padding: 20px
+    
+    
+    section
+        .service_item
+            gap: 12px
+            padding: 15px 17px
+            ._text
+                font-size: 17px
+                line-height: 18px
+
+        &.services 
+            .main_container 
+                .services_box
+                    grid-template-columns: repeat(2, 1fr)
+
+        &.service_inner, &.news_inner
+            .main_container 
+                .service_container, .news_container
+                    .left_box
+                        width: 100%
+                        max-width: unset
+                    .right_box
+                        display: none
+
+        &.news 
+            .main_container 
+                .title_box
+                    .mobile_news_filter
+                        display: block
+                .news_container
+                    display: block
+                    .right_box
+                        display: none
+                    .left_box
+                        width: 100%
+
+        &.doctor_inner 
+            .title_box 
+                &.mobile_title_box
+                    padding-top: 21px
+                    display: flex
+                    .mutual_title
+                        max-width: unset
+            .inner_container
+                padding-top: 0
+                flex-direction: column-reverse
+                gap: 0
+                .left_box
+                    padding-top: 40px
+                    width: 100%
+                    .title_box
+                        display: none
+                .right_box
+                    width: 100%
+                    max-width: 400px
+                    margin: 38px auto 0
+                    .doctor_img
+                        width: 80%
+                        padding-top: 80%
+                        margin-top: -38px
+                    ._liked
+                        display: none
+                    .doctor_info
+                        padding-top: 39px
+
+        &.shares_inner 
+            .main_container 
+                .shares_container 
+                    .left_box
+                        max-width: 100%
+                    .right_box
+                        display: none
+
+        &.blogs 
+            .main_container 
+                .title_box 
+                    .mobile_news_filter
+                        display: block
+                .inner_container 
+                    .left_box
+                        width: 100%
+                    .right_box
+                        display: none
+
+        &.blog_inner 
+            .main_container
+                .title_box 
+                    display: grid
+                    grid-gap: 15px
+                .blog_container 
+                    .right_box
+                        display: none
+                    .left_box
+                        max-width: 100%
+
+        &.award_inner, &.checkUp_inner
+            .main_container 
+                .inner_text
+                    padding-bottom: 32px
+                .inner_container 
+                    .inner_top
+                        flex-direction: column
+                        gap: 0
+                        .left_box
+                            width: 100%
+                        .right_box
+                            width: 100%
+                            margin: 0 auto
+                            .inner_img
+                                margin-bottom: 32px
+
+        &.vacancies 
+            .main_container 
+                .inner_container 
+                    .left_box
+                        width: 100%
+                    .right_box
+                        display: none
+                .inner_text 
+                    ._text 
+                        button
+                            margin-left: 0
+                        .show_more_less
+                            padding-top: 14px
+                            width: 100%
+                            gap: 15px
+                            justify-content: space-between
+                            button
+                                margin-left: 0
+                                font-size: 17px
+                            .vacancy_apply
+                                display: block
+                                font-size: 18px
+                                
+
+        &.notFound 
+            .main_container 
+                .notFound_container 
+                    ._text1
+                        margin-bottom: -20px
+                    ._number
+                        font-size: 294px
+                        line-height: 294px
+                    a
+                        margin-right: 0
+                        margin-top: 70px
+
+        &.fag_inner 
+            .inner_container
+                display: grid
+                gap: 40px
+                .left_box
+                    max-width: unset
+                .right_box
+                    width: 100%
+                    .accordion_box
+                        .accordion_item 
+                            .accordion_item__trigger::before
+                                left: -40px
+
+        &.contact_inner 
+            .title_box 
+                .mobile_contact_apply
+                    display: block
+                .form_title
+                    display: none
+            .inner_container
+                display: block
+                .right_box
+                    display: none
+                
+
+        &.about_inner 
+            .about_middle 
+                .main_container
+                    display: inline-grid
+                    grid-template-columns:100%
+                    padding-bottom: 60px
+                    gap: 20px
+                    .about_swiper
+                        max-width: unset
+                        ._text
+                            ._title, ._count
+                                font-size: 25px
+                                line-height: 25px
+                        
+                        .swiper
+                            .review-swiper-button-next
+                                right: 0
+                            .review-swiper-button-prev
+                                left: 0
+                        //     position: relative
+                        //     .swiper-wrapper
+                        //         position: relative
+                    .main_swiper_content
+                        ._img, video
+                            height: 400px
+                        p
+                            padding-top: 9px
+                            margin-left: auto
+                            margin-right: auto
+
+@media (max-width: 768px)
+    body
+        footer 
+            .main_container 
+                padding-top: 57px
+                .footer_top 
+                    justify-content: unset
+                    display: grid
+                    gap: 57px
+                    .top_right 
+                        padding-top: 0
+                        width: 100%
+                        ul
+                            grid-template-columns: repeat(3, 1fr)
+                            max-width: unset
+                    .top_left
+                        grid-row: 2
+                        display: grid
+                        gap: 15px
+                        ._logo
+                            grid-row: 1
+                            padding-top: 53px
+                            width: 119px
+                        ._text
+                            grid-column: 2 span
+                            max-width: 174px
+                            margin-top: 0
+                        ._socials
+                            justify-content: flex-end
+                            gap: 30px
+                            grid-column: 2
+                            grid-row: 1
+                            padding-top: 0
+                            height: max-content
+                            svg
+                                transform: none
+                                width: 25px
+                                height: 25px
+
+                .footer_middle
+                    margin-top: 57px
+
+                .footer_bottom
+                    padding-top: 19px
+                    ._copyright 
+                        p
+                            font-size: 10px
+    
+    main
+        &.index
+            .index_landing 
+                .main_container 
+                    .right_box 
+                        .swiper 
+                            .swiper-pagination 
+                                .swiper-pagination-bullet
+                                    &:nth-child(1)
+                                        top: -4px
+                                    &:nth-child(2)
+                                        left: 19px
+                                        top: 93px
+                                    &:nth-child(4)
+                                        left: 82px
+
+            .index_contact 
+                .contacts_box
+                    display: block
+                    width: 100%
+                    padding-left: calc((100vw - 540px) / 2)
+                    padding-right: calc((100vw - 540px) / 2)
+                    .contact_item
+                        padding: 15px 30px
+                        margin: 0 auto
+                        max-width: 364px
+                        min-height: 207px
+                        height: unset
+                        margin-bottom: 20px
+                .contact_map
+                    padding-bottom: 600px
+    section
+        &.services 
+            .main_container 
+                .services_box 
+        .service_item
+            padding: 22px 18px
+
+        &.doctors 
+            .main_container 
+                .doctors_box
+                    gap: 20px
+
+        &.shares 
+            .main_container 
+                .shares_container 
+                    .share_boxes
+                        grid-template-columns: 1fr
+                        .share_item 
+                            .item_info 
+                                .info_top 
+                                    ._name
+                                        height: unset
+
+        &.blog_inner 
+            .main_container 
+                .blog_container 
+                    .left_box 
+                        .inner_img
+                            padding-top: calc(8/17 * 100%)
+                            img
+                                border-radius: 10px
+
+
+@media (max-width: 576px)
+    .container
+        padding: 0 25px
+        .row
+            margin: 0
+    
+    body 
+        .breadcrumb_box
+            padding-top: 31px
+        .title_box
+            padding-top: 18px
+            padding-bottom: 10px
+            .mutual_title
+                font-size: 25px
+                line-height: 28px
+        
+        footer 
+            .main_container 
+                .footer_top 
+                    .top_right 
+                        ul
+                            gap: 30px 20px
+                            grid-template-columns: repeat(2, 1fr)
+                            li
+                                display: none
+                                &:nth-child(1), 
+                                &:nth-child(2),
+                                &:nth-child(3),
+                                &:nth-child(4),
+                                &:nth-child(5),
+                                &:nth-child(6), 
+                                &:nth-child(7),
+                                &:nth-child(8)
+                                    display: block
+                                span
+                                    font-weight: 700
+                                    font-size: 16px
+                                    line-height: 16px
+
+    main
+        &.index 
+            .title_box
+                padding-top: 57px
+                padding-bottom: 15px
+                .mutual_title
+                    line-height: 25px
+            
+            .index_landing 
+                &::before
+                    height: 974px
+                .main_container
+                    flex-direction: column-reverse
+                    padding-bottom: 60px
+                    .left_box
+                        padding-top: 19px
+                        padding-bottom: 0
+                        width: 100%
+                        flex-direction: column-reverse
+                        ._top
+                            padding-top: 79px
+                            .main_title
+                                font-size: 25px
+                                line-height: 30px
+                                max-width: 327px
+                            ._text
+                                padding-top: 7px
+                                font-size: 16px
+                                line-height: 22px
+                            button
+                                min-width: 192px
+
+                        ._bottom
+                            padding-top: 0
+                            gap: 25px
+                            .item
+                                padding: 10px 5px
+                                height: 65px
+                                border-radius: 12px
+                                &.active
+                                    span
+                                        transform: scale(1.2)
+                                    svg
+                                        transform: scale(1.1)
+                                span
+                                    font-size: 9px
+                                    line-height: 9px
+
+                    .right_box
+                        width: 100%
+                        padding: 15px
+                        .swiper_items
+                            &::before
+                                background: linear-gradient(115deg, rgb(151, 238, 238) 46%, #ECF0FE 94%)
+                        .swiper 
+                            .swiper-pagination 
+                                .swiper-pagination-bullet
+                                    display: none
+                        .inner_img
+                            border: 15px solid #ECF0FE
+                            > span
+                                border: 10px solid #ECF0FE !important
+                            &::before
+                                background: linear-gradient(-16deg, rgb(23, 68, 242) 64%, #ECF0FE 84%)
+            
+            .index_service 
+                padding-bottom: 60px
+                .services_row
+                    .service_item 
+                        padding: 15px
+                        height: 97px
+                        ._text
+                            font-size: 12px
+                            line-height: 12px
+                            font-weight: 600
+
+            .index_doctor 
+                .main_container
+                    margin: 31px 0
+                    border-radius: 80px 0 80px 0
+                    padding: 39px 0px 36px
+                    flex-direction: column
+                    gap: 0
+                    background: linear-gradient(360deg, #DEF4F4 58.82%, #1F3792 99.82%)
+                    .doctor_img
+                        margin-top: 0
+                        width: 107%
+                        img
+                            padding: 22px !important
+                    .info
+                        padding: 38px 24px 0
+                        ._title
+                            font-size: 25px
+                            line-height: 25px
+                        ._text
+                            font-size: 14px
+                            line-height: 14px
+                        span
+                            font-size: 14px
+                            line-height: 14px
+
+
+            .index_review
+                &::after
+                    content: none
+                &::before
+                    opacity: 0.7
+                .container
+                    padding: 0
+                .review_swiper 
+                    padding: 56px 0 50px
+                    .left_box 
+                        .container
+                            padding: 0 25px
+                        ._title
+                            font-size: 25px
+                            line-height: 25px
+                        ._text
+                            padding-top: 10px
+                            font-size: 16px
+                            line-height: 22px
+                            font-weight: 400
+                    .right_box 
+                        .container
+                            padding: 0
+                        .swiper
+                            padding-bottom: 45px
+                            .swiper-slide 
+                                max-width: 300px
+                                .review_item
+                                    padding: 20px 35px
+                                    ._img
+                                        width: 18px
+                                    ._title
+                                        font-size: 16px
+                                        line-height: 16px
+                                        padding-top: 15px
+                                        padding-bottom: 17px
+                                    ._text
+                                        padding-top: 11px
+                                        font-size: 14px
+                                        line-height: 20px
+
+            .index_blog 
+                .index_boxes 
+                    .blog_item 
+                        padding: 11px
+                        gap: 9px
+                        ._img
+                            display: block
+                            width: 40%
+                            min-height: 65px
+                        .item_info 
+                            width: 60%
+                            gap: 6px
+                            .info_left 
+                                .top_box 
+                                    ._name
+                                        padding-top: 0
+                                        font-size: 12px
+                                        line-height: 14px
+                                        -webkit-line-clamp: 2
+                                .bottom_box 
+                                    ._date
+                                        font-size: 10px
+                                        line-height: 10px
+                                    ._like
+                                        img
+                                            width: 16px !important
+    
+            .index_contact 
+                .contacts_box
+                    padding-left: 25px
+                    padding-right: 25px
+
+    section
+        .read_more
+            padding-top: 31px
+            button
+                min-width: 193px
+
+        .inner_text_bottom 
+            .top_box
+                display: grid
+                gap:22px
+                padding-bottom: 23px
+                ._author 
+                    ._title
+                        padding-bottom: 5px
+                    ._title, ._text
+                        font-size: 14px
+                        line-height: 14px
+                ._share 
+                    ._title
+                        padding-bottom: 8px
+                        font-size: 14px
+                        line-height: 14px
+                    .social_links 
+                        gap: 20px
+                        svg
+                            transform: scale(1.24)
+            .bottom_box
+                display: grid
+                gap: 4px
+                padding-top: 23px
+                align-items: unset
+                
+                .like_btn
+                    margin-bottom: -24px
+                    grid-row: 1
+                    grid-column: 2
+                    min-width: 44px
+                    img
+                        width: 44px !important
+                    .btn_text
+                        display: none
+
+        .user_comments
+            padding-top: 68px
+            .comment_title
+                font-size: 20px
+                line-height: 20px
+                padding-bottom: 10px
+            .comments_top 
+                .comments_box 
+                    .comment_item 
+                        ._box
+                            display: grid
+                            gap: 13px
+                            padding: 19px 20px 16px
+                            &.commmented_box 
+                                width: 90%
+                            .box_right
+                                flex-direction: row
+
+                .read_more_comment
+                    padding-top: 18px
+
+            .comments_bottom
+                padding-top: 38px
+                .comment_form 
+                    .form_inputs
+                        grid-template-columns: 1fr
+                    .form_info
+                        padding-top: 9px
+                    .form_btn
+                        justify-content: center
+                        button
+                            min-width: 192px
+
+        .index_partner
+            min-height: max-content
+            padding-top: 0px
+            .title_box
+                padding-top: 37px
+
+        &.services 
+            .main_container
+                padding-bottom: 50px
+                .services_box
+                    gap: 10px
+                    grid-template-columns: 1fr   
+        
+        .service_item
+            padding: 30px 25px
+            height: 200px                     
+
+        &.service_inner, &.news_inner
+            .main_container 
+                .title_box
+                    display: grid
+                    gap: 21px
+                    padding-bottom: 10px
+                    
+                .service_container,.news_container  
+                    .left_box 
+                        .inner_img 
+                            img
+                                border-radius: 14px
+                        .inner_text
+                            padding: 38px 0
+                            ._title
+                                font-size: 20px
+                                line-height: 20px
+                            ._text
+                                padding-top: 10px
+                            ul
+                                display: none
+
+                        .inner_text_footer
+                            padding-top: 36px
+                            gap: 38px
+                            .like_btn
+                                width: 44px
+                                height: 40px
+                                span 
+                                    width: 100% !important
+                                    height: 100% !important
+                                .btn_text
+                                    display: none
+                            .inner_main_btn
+                                min-width: unset
+                                max-width: 268px
+                                width: 100%
+
+                        .related_doctors
+                            padding-top: 44px
+                            ._title
+                                font-size: 20px
+                                line-height: 20px
+                                margin-bottom: -20px
+                            .doctors_box
+                                padding: 0
+                                border-bottom: none
+                                display: unset
+                                &:first-child
+                                    display: none
+                                    .doctor_item
+                                        display: none
+                                        &:first-child
+                                            padding-top: 0
+                                .doctor_item 
+                                    border-bottom: 1px solid $blue4
+                                    padding-bottom: 33px
+                                    padding-top: 36px
+                                    ._img
+                                        width: 74%
+                                        padding-top: 74%
+                                    ._name
+                                        max-width: unset
+                                        width: 100%
+                                        padding-top: 20px
+                                        font-size: 20px
+                                        line-height: 20px
+                                    ._position
+                                        margin-top: 22px
+                                        font-size: 16px
+                                        line-height: 16px
+                                        &::before
+                                            top: -11px
+
+        &.doctors 
+            .main_container 
+                .doctors_box
+                    border-bottom: none
+                    display: unset
+                    .doctor_item
+                        border-bottom: 1px solid $blue4
+                        padding-bottom: 33px
+                        margin-bottom: 36px
+                        ._img
+                            width: 75%
+                            padding-top: 75%
+                        ._name
+                            padding-top: 20px
+                            font-size: 20px
+                            line-height: 20px
+                        ._position
+                            margin-top: 22px
+                            font-size: 16px
+                            line-height: 16px
+                            &::before
+                                top: -11px
+
+        &.doctor_inner 
+            .title_box.mobile_title_box
+                padding-bottom: 55px
+            .inner_container 
+                .right_box 
+                    margin: 0
+                    max-width: unset
+                    .doctor_img
+                        width: 75%
+                        padding-top: 75%
+                    .doctor_info
+                        gap: 35px
+                        padding-top: 30px
+                        .info_item 
+                            ._title
+                                font-size: 20px
+                                line-height: 20px
+                                &::after
+                                    bottom: -12px
+                            ._text
+                                padding-top: 20px
+                .left_box 
+                    .doctor_info 
+                        margin-bottom: 70px
+                        ._title
+                            font-size: 20px
+                            line-height: 20px
+                            &::after
+                                bottom: -14px
+                        ._text
+                            padding-top: 23px
+                            font-size: 16px
+                            line-height: 26px
+                            font-weight: 500
+                        ul
+                            padding-left: 23px
+                            li
+                                line-height: 26px
+
+                    .info_swiper
+                        margin-top: -27px
+                        .swiper 
+                            padding-bottom: 46px
+                            .swiper-wrapper
+                                height: 173px
+                    .info_bottom 
+                        padding-top: 30px
+                        gap: 38px
+                        ._like 
+                            max-width: 35px
+                            width: 100%
+                            img
+                                width: 35px !important
+                            ._text
+                                display: none
+                        .main_btn
+                            width: 100%
+
+                    .user_comments
+                        padding-top: 84px
+
+        &.news 
+            .main_container 
+                padding-bottom: 50px
+                .news_container 
+                    .left_box 
+                        .news_boxes
+                            grid-template-columns: 1fr
+                            gap: 51px
+                            .news_item 
+                                ._img
+                                    height: 198px
+                                .item_info
+                                    padding-top: 21px
+                                    .info_top 
+                                        ._name
+                                            height: unset
+                                            font-size: 18px
+                                            line-height: 18px
+                                    .info_middle
+                                        padding-top: 10px
+                                        padding-bottom: 12px
+                                        ._date
+                                            font-size: 13px
+                                            line-height: 13px
+                                        .view_count
+                                            font-size: 13px
+                                            line-height: 13px
+                                    .info_bottom
+                                        padding-top: 10px
+  
+        &.shares 
+            .main_container 
+                .shares_container 
+                    .share_boxes 
+                        .share_item 
+                            ._img
+                                height: 200px
+                                .time_label
+                                    right: 21px
+                                    .time_box 
+                                        .main_span
+                                            font-size: 19px
+                                            line-height: 19px
+                                        ._box 
+                                            span
+                                                font-size: 8.5px
+                                                line-height: 8.5px 
+                            .item_info
+                                padding-top: 21px
+                                .info_top 
+                                    ._name
+                                        font-size: 19px
+                                        line-height: 19px
+                                .info_bottom 
+                                    a
+                                        font-size: 15px
+                                        line-height: 15px
+
+                    .read_more
+                        padding-top: 31px
+
+        &.shares_inner 
+            .main_container 
+                .title_box
+                    padding-bottom: 15px
+                .shares_container 
+                    .left_box 
+                        .inner_img 
+                            img
+                                border-radius: 7px
+                            .time_label
+                                
+                                right: 17px
+                                .time_box 
+                                    gap: 2px
+                                    .main_span
+                                        font-size: 28px
+                                        line-height: 28px
+
+                        .inner_text
+                            padding-top: 31px
+                            padding-bottom: 10px
+                            ._title
+                                font-size: 20px
+                                line-height: 20px
+                            ._text
+                                padding-top: 10px
+                            ul
+                                padding-top: 9px
+                                padding-left: 0
+                                gap: 10px
+                                li
+                                    line-height: 26px
+                                    &::before
+                                        top: 8px
+
+                        .inner_bottom
+                            padding-top: 21px
+                            button
+                                min-width: unset
+                                width: 100%
+
+        &.blogs 
+            .main_container 
+                .title_box 
+                    .mobile_news_filter
+                        padding-top: 2px
+                        svg
+                            width: 27px
+                .inner_container 
+                    .left_box 
+                        .blog_boxes
+                            gap: 10px
+        
+        .blog_item 
+            padding: 11px
+            border-radius: 9px
+            ._img
+                display: none
+            .item_info 
+                width: 100%
+                gap: 13px
+                .info_left 
+                    .top_box 
+                        ._text
+                            display: none
+                        ._name
+                            font-size: 16px
+
+                            -webkit-line-clamp: 2
+                    .bottom_box
+                        padding-top: 12px
+                        ._date
+                            font-size: 12px
+                            line-height: 12px
+
+                .info_right
+                    min-width: 18px
+                    a
+                        img
+                            width: 18px !important   
+
+        &.blog_inner 
+            .main_container 
+                .title_box
+                    gap: 27px
+                    padding-bottom: 10px
+                    .userLike_count 
+                        gap: 4px
+                        ._icon
+                                width: 20px
+                                height: 24px
+                                span
+                                    width: 100% !important
+                .blog_container 
+                    .left_box 
+                        .inner_img 
+                            padding-top: calc(8/14 * 100%)
+                            img
+                                border-radius: 7px
+                            &:first-child
+                                margin-bottom: -11px
+                            .image_label
+                                margin-top: 14px
+
+                        .inner_text
+                            padding-top: 42px
+                            padding-bottom: 22px
+                            ._title
+                                font-size: 20px
+                                line-height: 20px
+                            ul
+                                padding-top: 9px
+                                gap: 10px
+                                padding-left: 0
+                                li
+                                    line-height: 26px
+
+        &.award_inner, &.checkUp_inner
+            .main_container 
+                .inner_text 
+                    padding-bottom: 42px
+                    ._title
+                        font-size: 20px
+                        line-height: 20px
+                    ._text
+                        padding-top: 28px
+                        font-size: 16px
+                        line-height: 26px
+                    ul
+                        gap: 10px
+                        li
+                            line-height: 26px
+                .inner_container 
+                    .inner_top 
+                        .left_box 
+                            .title_box
+                                padding-bottom: 23px
+                        .right_box 
+                            .inner_img
+                                margin-top: -10px
+
+        &.search_result 
+            .main_container 
+                .title_box        
+                    display: grid
+                    gap: 10px
+                    padding-bottom: 16px   
+                .search_container
+                    padding-top: 0px
+                    .searched_item
+                        padding-top: 33px
+                        padding-bottom: 27px
+
+        &.notFound 
+            .main_container 
+                .notFound_container
+                    padding-top: 86px
+                    ._text1
+                        margin-bottom: -16px
+                        font-size: 14px
+                        line-height: 14px
+                    ._number
+                        font-size: 208px
+                        line-height: 208px
+                        &::after
+                            left: -20px
+                            height: 300px
+                    a
+                        max-width: 192px
+                        margin-top: 60px
+                    .bottom_text
+                        justify-content: center
+        
+        &.fag_inner 
+            .inner_container 
+                gap: 9px
+                padding-top: 18px
+                .left_box 
+                    .title_box
+                        padding-bottom: 6px
+                    ._text
+                        font-size: 16px
+                        line-height: 26px
+                .right_box 
+                    .accordion_box 
+                        .accordion_item 
+                            padding: 13px
+                            .accordion_item__trigger
+                                padding-right: 45px
+                                font-size: 16px
+                                line-height: 20px
+                                &::after
+                                    width: 22px
+                                &::before
+                                    left: -33px
+                            .accordion_item__contentOuter 
+                                p
+                                    padding-top: 10px
+                                    font-size: 14px
+                                    line-height: 20px
+
+        &.contact_inner 
+            .inner_container 
+                padding-bottom: 0
+                .left_box
+                    grid-template-columns: 1fr
+                    .contact_item
+                        height: 250px
+                        padding-left: 0
+                        &:nth-child(1), &:nth-child(3)
+                            border-right: none
+                            
+
+                    
+            .contact_map
+                height: 478px
+
+        .contact_item
+            height: 227px
+            padding: 15px 31px
+            ul
+                padding-top: 10px
+                li
+                    line-height: 30px
+                    span
+                        line-height: 30px
+                    &::before
+                        top: 10px
+
+        &.about_inner 
+            .about_top 
+                padding-bottom: 48px
+                > .left_box 
+                    .title_box
+                        padding-bottom: 24px
+                    .inner_boxes 
+                        .inner_text 
+                            ._title
+                                padding-top: 43px
+                                font-size: 20px
+                                line-height: 20px
+
+                            ._text
+                                padding-top: 28px
+
+                            ul
+                                padding-left: 0
+                                padding-top: 11px
+                                gap: 10px
+                                li
+                                    line-height: 26px
+                                    &::before
+                                        top: 9px
+            .about_middle 
+                padding: 9px 0 18px
+                .main_container 
+                    gap: 16px
+                    padding-bottom: 30px
+                    .mobile_about_swip
+                        display: flex
+                    
+                    .about_swiper
+                        display: none
+                        .swiper 
+                            .review-swiper-button-next, .review-swiper-button-prev
+                                width: 25px
+                        .swiper-wrapper 
+                            .swiper-slide 
+                                .inner_contain 
+                                    video
+                                        border-radius: 8px
+                                    span 
+                                        img
+                                            border-radius: 8px
+                        &.active
+                            display: block
+                        &.swiper_right
+                            grid-row: 2
+                        ._text 
+                            padding-bottom: 0
+                            ._count, ._title
+                                display: none
+
+                    .main_swiper_content 
+                        p
+                            padding-top: 14px
+                            font-weight: 500
+                            font-size: 14px
+                            line-height: 20px
+
+            .index_partner
+                padding-top: 43px
+                padding-bottom: 17px
+                .title_box
+                    padding-top: 0
+                .partner_swiper 
+                    .swiper
+                        padding-bottom: 45px
+
+
+
+@media (max-width: 414px)
+    .container
+        padding: 0 15px
+
+    main
+        &.index 
+            .index_landing 
+                .main_container 
+                    .left_box 
+                        ._bottom
+                            gap: 10px
+
+            .index_review 
+                .review_swiper 
+                    .left_box 
+                        .container
+                            padding: 0 15px 
+            .index_contact 
+                .contacts_box    
+                    padding: 0 15px 
+
+    section
+        &.notFound 
+            .main_container 
+                .notFound_container 
+                    ._number
+                        font-size: 160px
+                        line-height: 160px
+
+        &.fag_inner 
+            .inner_container 
+                .right_box 
+                    .accordion_box
+                        .accordion_item 
+                            .accordion_item__trigger::before
+                                content: none
+

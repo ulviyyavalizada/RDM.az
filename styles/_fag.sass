@@ -1,0 +1,86 @@
+.fag_inner
+    position: relative
+    &::before
+        content: ''
+        bottom: 0
+        left: 0
+        position: absolute
+        background-image: url(../public/img/fagBack.png)
+        background-position: cover
+        background-repeat: no-repeat
+        z-index: 2
+        max-width: 550px
+        width: 100%
+        height: 437px
+    .inner_container
+        display: flex
+        gap: 121px
+        padding-top: 21px
+        padding-bottom: 80px
+        .left_box
+            max-width: 389px
+            width: 100%
+            
+            .title_box
+                padding-top: 0
+                padding-bottom: 19px
+            ._text
+                font-size: 18px
+                line-height: 24px
+                font-weight: 400
+        .right_box
+            width: 66%
+            display: grid
+            gap: 10px
+            height: max-content
+            .accordion_box
+                display: flex
+                align-items: center
+                gap: 20px
+                .accordion_item
+                    width: 100%
+                    background-color: $blue5
+                    border-radius: 5px
+                    padding: 21px 23px
+                    .accordion_item__trigger 
+                        position: relative
+                        display: block
+                        font-size: 18px
+                        line-height: 18px
+                        font-weight: 600
+                        padding-right: 70px
+                        &.is-open
+                            &::after
+                                transform: rotate(90deg)
+                        &::before
+                            left: -56px
+                            position: absolute
+                            content: ''
+                            top: 50%
+                            transform: translateY(-50%)
+                            background-image: url('../public/img/plusIcon.svg')
+                            background-repeat: no-repeat
+                            width: 13px
+                            height: 13px
+                            margin: auto
+                        &::after
+                            right: 0
+                            position: absolute
+                            content: ''
+                            background-size: contain
+                            transition: .3s ease
+                            top: 50%
+                            transform: translateY(-50%)
+                            background-image: url('../public/img/accordionIcon.svg')
+                            background-repeat: no-repeat
+                            width: 22px
+                            height: 19px
+                            margin: auto
+                    .accordion_item__contentOuter
+                        transition: height 300ms ease 0s !important
+                        p
+                            padding-top: 19px
+                            padding-bottom: 2px
+                            font-size: 16px
+                            line-height: 24px
+

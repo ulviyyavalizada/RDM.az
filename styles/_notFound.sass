@@ -1,0 +1,58 @@
+.notFound
+    .main_container
+        .breadcrumb_box
+            a
+                color: $blue2
+            ._icon
+                img
+                    transform: rotate(-180deg)
+        .notFound_container
+            padding-top: 41px
+            padding-bottom: 48px
+            display: flex
+            justify-content: center
+            flex-direction: column
+            ._text1
+                text-align: center
+                color: $blue4
+                margin-bottom: -22px
+                font-size: 25px
+                line-height: 25px
+                font-weight: 700
+            ._number
+                text-align: center
+                font-size: 394.5px
+                line-height: 394.5px
+                width: max-content
+                font-weight: 700
+                margin: 0 auto
+                position: relative
+                &::after
+                    content: ''
+                    position: absolute
+                    top: 0px
+                    max-width: 644px
+                    width: 100%
+                    background-size: contain
+                    height: 467px
+                    z-index: 0
+                    left: -40px
+                    transform: rotate(12deg)
+                    background-repeat: no-repeat
+                    background-image: url(../public/img/notfound.png)
+            a
+                margin-right: 58px
+                color: $white
+                font-size: 16px
+                line-height: 16px
+                background-color: $blue1
+                padding: 15px 21px
+                font-weight: 600
+                max-width: 224px
+                border-radius: 15px
+                height: 50px
+                +flex_center
+            .bottom_text
+                z-index: 1
+                display: flex
+                justify-content: flex-end
